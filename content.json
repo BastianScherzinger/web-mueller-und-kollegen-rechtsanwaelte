@@ -105,7 +105,8 @@
   "content_enriched": true,
   "fotos_graded": true,
   "makeover_stages": [
-    "lokal"
+    "lokal",
+    "politur"
   ],
   "makeover_version": 7
 }

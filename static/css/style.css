@@ -69,7 +69,7 @@ a{color:inherit;text-decoration:none}
 .nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* ── Hero ────────────────────────────────────────────────────────────────── */
-.hero{position:relative;padding:clamp(48px,8vw,96px) 0 clamp(36px,5vw,64px);overflow:hidden}
+.hero{position:relative;padding:clamp(40px,5vw,72px) 0 clamp(32px,4vw,56px);overflow:hidden}
 /* Zwei-Spalten-Hero: links Text (linksbündig), rechts Kostenrechner-Karte. */
 .hero-in{
   position:relative;z-index:1;
@@ -86,16 +86,16 @@ a{color:inherit;text-decoration:none}
   text-align:left;line-height:1.08
 }
 .lead{
-  font-size:clamp(1rem,1.6vw,1.2rem);color:var(--ink-soft);
-  margin:18px 0 28px;max-width:40ch;line-height:1.7
+  font-size:clamp(1rem,1.5vw,1.18rem);color:var(--ink-soft);
+  margin:20px 0 34px;max-width:42ch;line-height:1.72
 }
 .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 
 /* ── Kostenrechner-Karte (Hero, rechte Spalte) ───────────────────────────── */
 .hero-rechner{
-  background:rgba(255,255,255,.97);color:var(--ink);border-radius:var(--radius);
-  padding:clamp(16px,2vw,24px);box-shadow:0 22px 60px -20px rgba(0,0,0,.5);
-  display:grid;gap:14px;backdrop-filter:blur(2px);
+  background:rgba(255,255,255,.98);color:var(--ink);border-radius:var(--radius);
+  padding:clamp(20px,2.5vw,30px);box-shadow:0 24px 64px -16px rgba(0,0,0,.56);
+  display:grid;gap:16px;backdrop-filter:blur(4px);align-self:center;
 }
 .hr-head{display:grid;gap:3px}
 .hr-title{font-family:"Fraunces",Georgia,serif;font-size:1.2rem;font-weight:700;line-height:1.15}
@@ -121,17 +121,17 @@ a{color:inherit;text-decoration:none}
 .hr-cta{width:100%;justify-content:center}
 .hr-note{font-size:11.5px;color:var(--ink-soft);line-height:1.5;margin:0}
 
-/* Banner-Hero: Vollflächiges Hintergrundbild + dunkles Overlay für gute Lesbarkeit. */
+/* Banner-Hero: Vollflächiges Hintergrundbild + geteilter Scrim: links stark (Text), rechts heller (Rechner). */
 .hero-banner{
-  min-height:clamp(420px,60vh,620px);display:flex;align-items:center;
+  min-height:clamp(520px,75vh,720px);display:flex;align-items:center;
   background-image:var(--hero-img);background-size:cover;background-position:center;
   background-color:var(--ink);
 }
 .hero-banner::before{
   content:"";position:absolute;inset:0;z-index:0;
   background:
-    linear-gradient(180deg, rgba(20,17,15,.25) 0%, rgba(20,17,15,.80) 100%),
-    radial-gradient(120% 90% at 25% 30%, rgba(20,17,15,.08), rgba(20,17,15,.50));
+    linear-gradient(108deg, rgba(14,16,20,.85) 0%, rgba(14,16,20,.64) 44%, rgba(14,16,20,.28) 100%),
+    linear-gradient(180deg, rgba(14,16,20,.12) 0%, rgba(14,16,20,.44) 100%);
 }
 .hero-banner .eyebrow{color:rgba(255,255,255,.92)}
 .hero-banner h1{color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.30)}
@@ -164,7 +164,7 @@ a{color:inherit;text-decoration:none}
 .section-t + *:not(.section-lead){margin-top:32px}
 
 /* ── Leistungs-Grid ──────────────────────────────────────────────────────── */
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{
   background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
   padding:28px 24px;box-shadow:var(--shadow);
@@ -214,7 +214,7 @@ a{color:inherit;text-decoration:none}
 .about-photo,.ph-portrait{width:100%;aspect-ratio:4/5;border-radius:var(--radius);object-fit:cover}
 .about-cap{font-size:14px;color:var(--ink-soft);font-weight:600;text-align:center}
 .about-text{color:var(--ink-soft);font-size:1.05rem;max-width:60ch;line-height:1.75}
-.about-body .trust{margin:24px 0;grid-template-columns:repeat(3,1fr)}
+.about-body .trust{margin:24px 0;grid-template-columns:repeat(2,1fr)}
 .ph{
   background:color-mix(in srgb,var(--accent) 7%,var(--surface));border:1px dashed var(--line);
   display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
@@ -223,13 +223,14 @@ a{color:inherit;text-decoration:none}
 .ph svg{width:34px;height:34px;opacity:.7}
 
 /* Trust-Signale */
-.trust{list-style:none;display:grid;gap:12px}
+.trust{list-style:none;display:grid;gap:10px}
 .trust li{
   background:var(--surface);border:1px solid var(--line);border-radius:12px;
-  padding:14px 16px;display:flex;flex-direction:column;gap:3px
+  padding:13px 15px;display:flex;align-items:flex-start;gap:10px
 }
+.trust-ic{flex:0 0 auto;width:17px;height:17px;color:var(--accent);margin-top:2px}
 .trust strong{font-size:14.5px}
-.trust span{font-size:13px;color:var(--ink-soft)}
+.trust span{font-size:13.5px;color:var(--ink);line-height:1.5}
 
 /* ── Team ────────────────────────────────────────────────────────────────── */
 .team-wrap{margin-top:clamp(36px,5vw,56px)}
@@ -286,7 +287,7 @@ a{color:inherit;text-decoration:none}
 .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 
 /* ── Footer ──────────────────────────────────────────────────────────────── */
-.foot{padding:32px 0 100px;border-top:1px solid var(--line)}
+.foot{padding:32px 0 44px;border-top:1px solid var(--line)}
 .foot-in{
   display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
   font-size:13.5px;color:var(--ink-soft)
@@ -328,14 +329,15 @@ a{color:inherit;text-decoration:none}
 @media (max-width:960px){
   .contact{grid-template-columns:1fr}
   .team{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(2,1fr)}
   /* Hero stapelt: Text oben, Rechner darunter. */
-  .hero-in{grid-template-columns:1fr;gap:24px}
-  .hero-rechner{max-width:460px;width:100%}
+  .hero-in{grid-template-columns:1fr;gap:28px}
+  .hero-rechner{max-width:480px;width:100%}
 }
 
 /* Mobil */
 @media (max-width:820px){
-  .hero-banner{min-height:clamp(360px,70vh,500px)}
+  .hero-banner{min-height:clamp(440px,80vh,620px)}
   .about{grid-template-columns:1fr}
   .about-media{max-width:280px;margin:0 auto}
   .about-body .trust{grid-template-columns:repeat(2,1fr)}
@@ -362,11 +364,13 @@ a{color:inherit;text-decoration:none}
     display:flex;position:fixed;left:0;right:0;bottom:0;z-index:90;
     border-top:1px solid var(--line);box-shadow:0 -4px 16px -6px rgba(0,0,0,.22)
   }
+  .foot{padding-bottom:100px}
 }
 
 /* Kleines Smartphone */
 @media (max-width:520px){
-  .hero h1{font-size:clamp(1.9rem,8vw,2.4rem)}
+  .hero h1{font-size:clamp(1.85rem,7.5vw,2.35rem)}
+  .grid{grid-template-columns:1fr}
   .lead{font-size:1rem;margin:14px 0 22px}
   .hero-cta{gap:10px}
   .hero-cta .btn{font-size:14px;padding:13px 20px}

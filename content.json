@@ -6,28 +6,40 @@
   "email": "",
   "adresse": "Pichelsdorfer Str. 92 13595 Berlin (Spandau)",
   "akzent": "#007BFF",
-  "fotos": [],
+  "fotos": [
+    "/static/img/gal_ph1.svg",
+    "/static/img/gal_ph2.svg",
+    "/static/img/gal_ph3.svg"
+  ],
   "hero_image": "/static/img/hero.png",
   "headline": "Müller & Kollegen - Recht für Spandau",
   "subline": "Vertrauenswürdige Anwälte für Ihre rechtlichen Belange in Berlin.",
   "ueber_titel": "Rechtsanwaltskanzlei Müller & Kollegen",
-  "ueber_text": "Müller & Kollegen Rechtsanwälte bieten seit vielen Jahren ein persönliches und vertrauensvolles Beratungserlebnis für Einzelpersonen und Unternehmen in Spandau, Berlin. Wir kümmern uns um Ihre rechtlichen Angelegenheiten mit Kompetenz und Engagement.",
+  "ueber_text": "Müller & Kollegen Rechtsanwälte ist seit über zehn Jahren in Spandau tätig und hat sich auf die Unterstützung kleiner Unternehmen und Privatpersonen spezialisiert. Wir bieten persönlichen Service und ein umfassendes Wissen im Bereich des deutschen Rechtssystems, das uns zu vertrauenswürdigen Partnern macht.",
   "leistungen": [
     {
       "titel": "Vertragsrecht",
-      "text": "Wir erstellen und überprüfen Verträge aller Art."
+      "text": "Schnelle und präzise Rechtsschutz im täglichen Geschäft."
     },
     {
       "titel": "Familienrecht",
-      "text": "Für Scheidungen, Unterhaltsansprüche und mehr."
+      "text": "Erfahrene Beratung bei Scheidungs- und Unterhaltsstreitigkeiten."
     },
     {
       "titel": "Immobilienrecht",
-      "text": "Anlagen, Verkäufe und Mietverträge."
+      "text": "Sicherstellung von Eigentumsrechten durch professionelle Rechtsdienstleistungen."
     },
     {
-      "titel": "Unternehmensrecht",
-      "text": "Gründung, Rechtliche Beratung für Unternehmen."
+      "titel": "Verwaltungsrecht",
+      "text": "Effektive Unterstützung bei Behördenverfahren und Klagen."
+    },
+    {
+      "titel": "Arbeitsrecht",
+      "text": "Schutz der Arbeitsrechte durch qualifizierte Beratung."
+    },
+    {
+      "titel": "Steuerrecht",
+      "text": "Optimierung von Steuern durch rechtliche Strategien."
     }
   ],
   "cta_text": "Jetzt Termin vereinbaren",
@@ -60,5 +72,35 @@
   "font_display": "Playfair Display",
   "font_body": "Source Sans 3",
   "taste_applied": true,
-  "hero_source": "higgsfield_mcp"
+  "about_image": "/static/img/about_ph.svg",
+  "placeholder_images": true,
+  "faq": [
+    {
+      "frage": "Wie erreiche ich Sie außerhalb der Bürozeiten?",
+      "antwort": "Wir sind flexibel und können auch nach Feierabend oder am Wochenende telefonisch erreichbar sein."
+    },
+    {
+      "frage": "Bieten Sie eine erste Beratung ohne Kosten an?",
+      "antwort": "Ja, wir bieten eine kostenlose Erstberatung an, um Ihre Bedürfnisse zu verstehen."
+    },
+    {
+      "frage": "Wie lange dauert die Bearbeitung meines Falles?",
+      "antwort": "Die Dauer hängt von der Art des Falles ab. Wir informieren Sie frühzeitig über erwartete Zeiträume."
+    },
+    {
+      "frage": "Werden meine Daten sicher gehalten?",
+      "antwort": "Wir verpflichten uns zu strenger Datensicherheit und Datenschutz."
+    },
+    {
+      "frage": "Haben Sie Erfahrung im Bereich ... ?",
+      "antwort": "Unser Team hat umfassende Erfahrungen in verschiedenen Rechtsgebieten, einschließlich dem von Ihnen genannten."
+    }
+  ],
+  "trust": [
+    "Flexibler Kontakt außerhalb der Bürozeiten",
+    "Kostenlose Erstberatung",
+    "Sicherheitsgarantie für Kundendaten",
+    "Spezialisiert auf lokale Bedürfnisse in Spandau"
+  ],
+  "content_enriched": true
 }
